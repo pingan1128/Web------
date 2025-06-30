@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>中国女排巴黎奥运会周期表现分析</title>
+    <!-- 添加SEO相关元标签 -->
+    <meta name="description" content="中国女排巴黎奥运会周期表现分析，包含最新赛事、球员信息和精彩瞬间">
+    <meta name="keywords" content="中国女排,巴黎奥运会,朱婷,蔡斌,李盈莹,王云蕗">
+    <!-- 添加网站图标 -->
+    <link rel="jpg" href="4.jpg" type="jpg">
+    <!-- 内联CSS样式 -->
+    <style>
+      /* 全局样式 */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+      }
+
+      body {
+        background-color: #f5f5f5;
+        color: #333;
+        line-height: 1.6;
+        /* 添加背景图案 */
+        background-image: url('background.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        position: relative;
+      }
+      
+      /* 添加页面整体半透明覆盖层，确保内容可读性 */
+      body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(214, 30, 6, 0.15); /* 改为红色半透明 */
+        z-index: -1;
+      }
+
+      .main-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+
+      /* 修正h1样式 */
+      h1, h2, h3, h4 {
+        margin: 15px 0;
+        color: #d81e06;
+      }
+      
+      /* 其余样式保持不变... */
+      h1 {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 2.5em;
+        color: #d81e06;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+      }
+      
+      /* 添加主标题样式增强 */
+      .main-title {
+        text-align: center;
+        padding: 25px 0;
+        font-size: 2.8em;
+        color: #d81e06;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+        position: relative;
+        animation: titleFadeIn 1.2s ease-in-out;
+      }
+      
+      @keyframes titleFadeIn {
+        0% { opacity: 0; transform: translateY(-20px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+
+      p {
+        margin-bottom: 15px;
+      }
+
+      a {
+        color: #d81e06;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      a:hover {
+        color: #ff4d4d;
+        text-decoration: underline;
+      }
+
+      /* 导航栏样式 */
+      nav {
+        background-color: #d81e06;
+        padding: 15px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        flex-wrap: wrap;
+      }
+
+      nav li {
+        margin: 0 15px;
+      }
+
+      nav a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 1.1em;
+        padding: 5px 10px;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+      }
+
+      nav a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        text-decoration: none;
+      }
+
+      /* 横幅样式 */
+      .banner {
+        margin-bottom: 30px;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        position: relative;
+      }
+
+      .banner img {
+        display: block;
+        transition: transform 0.5s;
+        filter: brightness(0.9);
+      }
+
+      .banner:hover img {
+        transform: scale(1.03);
+        filter: brightness(1);
+      }
+      
+      /* 添加横幅覆盖层样式 */
+      .banner-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(transparent, rgba(0,0,0,0.7));
+        padding: 20px;
+        color: white;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        transform: translateY(100%);
+        transition: transform 0.4s ease;
+      }
+      
+      .banner:hover .banner-overlay {
+        transform: translateY(0);
+      }
+
+      /* 视频部分样式 */
+      .video-section {
+        margin: 40px 0;
+        text-align: center;
+      }
+
+      .video-container {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
+      }
+
+      .video-container video {
+        display: block;
+        width: 100%;
+        height: auto;
+        border: none;
+        background-color: #000;
+        /* 增加视频亮度和对比度 */
+        filter: brightness(1.8) contrast(1.2) saturate(1.1);
+      }
+
+      .video-caption {
+        margin-top: 15px;
+        font-style: italic;
+        color: #666;
+        font-size: 1.1em;
+      }
+
+      /* 为视频控制条添加样式 */
+      video::-webkit-media-controls {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      video::-webkit-media-controls-panel {
+        padding: 5px;
+      }
+
+      /* 球员卡片样式 */
+      .players-intro {
+        margin: 40px 0;
+      }
+
+      .player-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 20px;
+      }
+
+      .player-card {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 240px;
+        height: 420px; /* 添加固定高度 */
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .player-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .player-card img {
+        border-radius: 8px;
+        margin-bottom: 15px;
+        width: 100%;
+        height: 200px; /* 统一图片高度 */
+        object-fit: cover;
+        object-position: top center; /* 确保头部显示在中央 */
+      }
+      
+      /* 为每个球员单独设置图片位置调整 */
+      .player-card:nth-child(1) img {
+        object-position: center 15%; /* 朱婷照片位置调整 */
+      }
+      
+      .player-card:nth-child(2) img {
+        object-position: center 10%; /* 袁心玥照片位置调整 */
+      }
+      
+      .player-card:nth-child(3) img {
+        object-position: center 20%; /* 李盈莹照片位置调整 */
+      }
+      
+      .player-card:nth-child(4) img {
+        object-position: center 15%; /* 王云蕗照片位置调整 */
+      }
+
+      .player-card h3 {
+        color: #d81e06;
+        margin-bottom: 10px;
+        font-size: 1.3em; /* 统一标题大小 */
+      }
+
+      .player-card p {
+        margin-bottom: 8px;
+        font-size: 0.95em; /* 统一文字大小 */
+        line-height: 1.4;
+      }
+
+      /* 简介部分样式 */
+      .player-card p:last-child {
+        flex-grow: 1;
+        overflow: auto; /* 如果内容过多允许滚动 */
+        margin-top: auto; /* 将简介推到底部 */
+      }
+
+      /* 表格样式 */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      table td {
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+      }
+
+      table tr:first-child {
+        background-color: #d81e06;
+        color: white;
+        font-weight: bold;
+      }
+
+      table tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      table tr:hover {
+        background-color: #f5f5f5;
+      }
+
+      /* 粉丝留言区样式 */
+      .fan-messages {
+        margin: 40px 0;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .message-form {
+        margin-bottom: 20px;
+      }
+
+      .message-form textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        resize: vertical;
+        margin-bottom: 10px;
+      }
+
+      .message-form button, .quiz-submit, form input[type="submit"], .subscribe-form button {
+        background-color: #d81e06;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s;
+      }
+
+      .message-form button:hover, .quiz-submit:hover, form input[type="submit"]:hover, .subscribe-form button:hover {
+        background-color: #ff4d4d;
+      }
+
+      .messages {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .message {
+        background-color: #f9f9f9;
+        padding: 15px;
+        border-radius: 8px;
+        border-left: 4px solid #d81e06;
+      }
+
+      .message h4 {
+        margin-bottom: 5px;
+        color: #333;
+      }
+
+      /* 新闻动态样式 */
+      .news-section {
+        margin: 40px 0;
+      }
+
+      .news-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 20px;
+      }
+
+      .news-item {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .news-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .news-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .news-item h3 {
+        padding: 15px 15px 5px;
+        font-size: 1.2em;
+      }
+
+      .news-date {
+        color: #888;
+        font-size: 0.9em;
+        padding: 0 15px;
+      }
+
+      .news-item p {
+        padding: 0 15px 15px;
+      }
+
+      .read-more {
+        display: inline-block;
+        margin: 0 15px 15px;
+        font-weight: bold;
+      }
+
+      /* 赛程表样式 */
+      .schedule-section {
+        margin: 40px 0;
+      }
+
+      .schedule-table table {
+        width: 100%;
+      }
+
+      /* 问答部分样式 */
+      .quiz-section {
+        margin: 40px 0;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .quiz-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .quiz-question {
+        margin-bottom: 15px;
+      }
+
+      .quiz-options {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .quiz-options label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      .quiz-options input {
+        margin-right: 10px;
+      }
+
+      .quiz-submit {
+        align-self: flex-start;
+        margin-top: 10px;
+      }
+
+      /* 搜索表单样式 */
+      form {
+        margin: 30px 0;
+        display: flex;
+        gap: 10px;
+      }
+
+      form input[type="text"], form input[type="email"], .subscribe-form input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+
+      /* 订阅部分样式 */
+            .subscribe-section {
+              margin: 40px 0;
+              background-color: #f9f9f9;
+              padding: 30px;
+              border-radius: 8px;
+              text-align: center;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            .subscribe-form {
+              display: flex;
+              max-width: 500px;
+              margin: 20px auto 0;
+              gap: 10px;
+            }
+
+            /* 页脚样式 */
+            footer {
+              background-color: #333;
+              color: #fff;
+              padding: 40px 0 20px;
+              margin-top: 50px;
+              border-radius: 8px 8px 0 0;
+            }
+
+            .footer-columns {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              margin-bottom: 30px;
+            }
+
+            .footer-column {
+              flex: 1;
+              min-width: 250px;
+              padding: 0 20px;
+              margin-bottom: 20px;
+            }
+
+            .footer-column h3 {
+              color: #fff;
+              margin-bottom: 15px;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+              padding-bottom: 10px;
+            }
+
+            .footer-column ul {
+              list-style: none;
+            }
+
+            .footer-column li {
+              margin-bottom: 8px;
+            }
+
+            .footer-column a {
+              color: #ccc;
+            }
+
+            .footer-column a:hover {
+              color: #fff;
+            }
+
+            .social-links {
+              text-align: center;
+              margin-bottom: 20px;
+            }
+
+            .social-links a {
+              color: #ccc;
+              margin: 0 10px;
+            }
+
+            .social-links a:hover {
+              color: #fff;
+            }
+
+            footer p {
+              text-align: center;
+              margin-bottom: 10px;
+              color: #aaa;
+              font-size: 0.9em;
+            }
+
+            /* 响应式调整 */
+            @media (max-width: 850px) {
+              .video-container {
+                max-width: 100%;
+              }
+              
+              .player-cards {
+                justify-content: center;
+              }
+              
+              .news-grid {
+                grid-template-columns: 1fr;
+              }
+              
+              .footer-columns {
+                flex-direction: column;
+              }
+              
+              .footer-column {
+                width: 100%;
+                margin-bottom: 30px;
+              }
+              
+              nav ul {
+                flex-direction: column;
+                align-items: center;
+              }
+              
+              nav li {
+                margin: 5px 0;
+              }
+              
+              table {
+                font-size: 0.9em;
+              }
+              
+              .subscribe-form {
+                flex-direction: column;
+              }
+            }
+          </style>
+        </head>
+        <body>
+          <!-- 添加导航栏 -->
+          <nav>
+            <ul>
+              <li><a href="index.html">首页</a></li>
+              <li><a href="news.html">最新动态</a></li>
+              <li><a href="players.html">球员介绍</a></li>
+              <li><a href="matches.html">赛事回顾</a></li>
+              <li><a href="gallery.html">精彩图集</a></li>
+              <li><a href="about.html">关于我们</a></li>
+            </ul>
+          </nav>
+          
+          <!-- 添加主标题，增加动画效果 -->
+          <h1 class="main-title">中国女排巴黎奥运会周期表现分析</h1>
+          
+          <!-- 添加头图横幅，优化图片显示 -->
+          <div class="banner">
+            <img src="4.jpg" alt="中国女排巴黎奥运会队伍" width="100%">
+            <div class="banner-overlay">
+              <p>为中国女排加油助威</p>
+            </div>
+          </div>
+          
+          <div class="main-content">
+            <!-- 在 <p> 标签中修改链接 -->
+            <p>
+              中国女排在巴黎奥运周期经历了重大变革，<a href="#" onclick="playVideo('2.mp4'); return false;"
+                >中国女排出征巴黎奥运会精彩表现</a
+              >展示了队伍的信心与决心。
+            </p>
+            
+            <!-- 在页面底部 </body> 标签前添加脚本 -->
+            <script>
+              function playVideo(videoSrc) {
+                // 创建一个模态框来播放视频
+                const modal = document.createElement('div');
+                modal.style.position = 'fixed';
+                modal.style.top = '0';
+                modal.style.left = '0';
+                modal.style.width = '100%';
+                modal.style.height = '100%';
+                modal.style.backgroundColor = 'rgba(0,0,0,0.8)';
+                modal.style.display = 'flex';
+                modal.style.justifyContent = 'center';
+                modal.style.alignItems = 'center';
+                modal.style.zIndex = '1000';
+                
+                // 创建视频元素
+                const video = document.createElement('video');
+                video.src = videoSrc;
+                video.controls = true;
+                video.autoplay = true;
+                video.style.maxWidth = '90%';
+                video.style.maxHeight = '80%';
+                // 添加与主视频相同的亮度滤镜效果
+                video.style.filter = 'brightness(1.8) contrast(1.2) saturate(1.1)';
+                
+                // 添加关闭按钮
+                const closeBtn = document.createElement('div');
+                closeBtn.innerHTML = '×';
+                closeBtn.style.position = 'absolute';
+                closeBtn.style.top = '20px';
+                closeBtn.style.right = '30px';
+                closeBtn.style.fontSize = '30px';
+                closeBtn.style.color = 'white';
+                closeBtn.style.cursor = 'pointer';
+                closeBtn.onclick = function() {
+                  document.body.removeChild(modal);
+                };
+                
+                // 点击模态框背景也可以关闭
+                modal.onclick = function(e) {
+                  if (e.target === modal) {
+                    document.body.removeChild(modal);
+                  }
+                };
+                
+                // 将元素添加到页面
+                modal.appendChild(video);
+                modal.appendChild(closeBtn);
+                document.body.appendChild(modal);
+              }
+            </script>
+            
+            <!-- 添加视频部分 -->
+            <section class="video-section">
+              <h2>中国女排精彩视频</h2>
+              <div class="video-container">
+                <video src="1.mp4" controls autoplay muted width="800" height="450">
+                  您的浏览器不支持视频标签，请升级浏览器
+                </video>
+              </div>
+              <p class="video-caption">中国女排巴黎奥运会集锦</p>
+            </section>
+            
+            <h2>球队近期表现</h2>
+            <ol>
+              <li>蔡斌接任主教练，带领队伍重新出发</li>
+              <li>朱婷伤愈归来，成为球队精神领袖</li>
+              <li>李盈莹、王云蕗等新生代球员迅速成长</li>
+              <li>巴黎奥运会小组赛表现稳定，展现团队凝聚力</li>
+            </ol>
+            
+            <!-- 添加球员介绍部分 -->
+            <section class="players-intro">
+              <h2>核心球员介绍</h2>
+              <div class="player-cards">
+                <div class="player-card">
+                  <img src="8.jpg" alt="朱婷" width="200">
+                  <h3>朱婷</h3>
+                  <p>位置：主攻手</p>
+                  <p>身高：198cm</p>
+                  <p>简介：中国女排队长，世界顶级主攻手，拥有强大的进攻和防守能力。</p>
+                </div>
+                <div class="player-card">
+                  <img src="3.jpg" alt="袁心玥" width="200">
+                  <h3>袁心玥</h3>
+                  <p>位置：副攻</p>
+                  <p>身高：201cm</p>
+                  <p>简介：中国女排核心副攻，拥有出色的拦网和快攻能力。</p>
+                </div>
+                <div class="player-card">
+                  <img src="1.jpg" alt="李盈莹" width="200">
+                  <h3>李盈莹</h3>
+                  <p>位置：主攻手</p>
+                  <p>身高：192cm</p>
+                  <p>简介：新生代主攻手，拥有超强的扣球力量和稳定的一传能力。</p>
+                </div>
+                <div class="player-card">
+                  <img src="9.jpg" alt="王云蕗" width="200">
+                  <h3>王云蕗</h3>
+                  <p>位置：主攻手</p>
+                  <p>身高：195cm</p>
+                  <p>简介：年轻的主攻手，拥有出色的扣球技术和防守能力，是球队未来的重要力量。</p>
+                </div>
+              </div>
+            </section>
+            
+            <p>
+              <img src="4.jpg" alt="中国女排合影" width="200" />
+              <img src="6.jpg" alt="中国女排比赛瞬间" width="200" />
+            </p>
+            
+            <h2>重要赛事成绩</h2>
+            <table>
+              <tr>
+                <td>赛事</td>
+                <td>时间</td>
+                <td>成绩</td>
+              </tr>
+              <tr>
+                <td>2023世界女排联赛</td>
+                <td>2023年5-6月</td>
+                <td>亚军</td>
+              </tr>
+              <tr>
+                <td>2023亚洲杯</td>
+                <td>2023年8月</td>
+                <td>冠军</td>
+              </tr>
+              <tr>
+                <td>2024世界女排联赛</td>
+                <td>2024年5-6月</td>
+                <td>第四名</td>
+              </tr>
+            </table>
+            
+            <!-- 添加粉丝留言区 -->
+            <section class="fan-messages">
+              <h2>球迷留言区</h2>
+              <div class="message-form">
+                <textarea placeholder="在此留下您对中国女排的祝福和期望..." rows="4"></textarea>
+                <button>提交留言</button>
+              </div>
+              <div class="messages">
+                <div class="message">
+                  <h4>排球爱好者</h4>
+                  <p>中国女排加油！期待在巴黎奥运会上再创辉煌！</p>
+                </div>
+                <div class="message">
+                  <h4>女排铁粉</h4>
+                  <p>朱婷回归，中国女排实力大增，相信一定能取得好成绩！</p>
+                </div>
+              </section>
+              
+              <!-- 添加新闻动态部分 -->
+              <section class="news-section">
+                <h2>最新动态</h2>
+                <div class="news-grid">
+                  <div class="news-item">
+                    <img src="7.jpg" alt="中国女排训练" width="100%">
+                    <h3>中国女排抵达巴黎开始适应性训练</h3>
+                    <p class="news-date">2024-07-25</p>
+                    <p>中国女排已经抵达巴黎，开始了奥运会前的最后适应性训练。主教练蔡斌表示队伍状态良好，已经做好了充分准备。</p>
+                    <a href="#" class="read-more">阅读更多</a>
+                  </div>
+                  <div class="news-item">
+                    <img src="4.jpg" alt="中国女排战术分析" width="100%">
+                    <h3>专家解析：中国女排新战术体系</h3>
+                    <p class="news-date">2024-07-20</p>
+                    <p>本届奥运会，中国女排采用了全新的战术体系，更加注重快速进攻和灵活防守，这将成为球队争夺奖牌的关键。</p>
+                    <a href="#" class="read-more">阅读更多</a>
+                  </div>
+                </div>
+              </section>
+              
+              <!-- 添加赛程安排部分 -->
+              <section class="schedule-section">
+                <h2>巴黎奥运会赛程安排</h2>
+                <div class="schedule-table">
+                  <table>
+                    <tr>
+                      <td>比赛日期</td>
+                      <td>对阵球队</td>
+                      <td>比赛时间(北京时间)</td>
+                      <td>比赛场地</td>
+                    </tr>
+                    <tr>
+                      <td>2024-07-28</td>
+                      <td>中国 VS 塞尔维亚</td>
+                      <td>21:00</td>
+                      <td>南巴黎体育馆</td>
+                    </tr>
+                    <tr>
+                      <td>2024-07-31</td>
+                      <td>中国 VS 多米尼加</td>
+                      <td>14:00</td>
+                      <td>南巴黎体育馆</td>
+                    </tr>
+                    <tr>
+                      <td>2024-08-03</td>
+                      <td>中国 VS 巴西</td>
+                      <td>17:00</td>
+                      <td>南巴黎体育馆</td>
+                    </tr>
+                  </table>
+                </div>
+              </section>
+              
+              <section class="quiz-section">
+                <h2>女排知识问答</h2>
+                <div class="quiz-container">
+                  <div class="quiz-question">
+                    <h3>问题1：中国女排在奥运会历史上获得过几次金牌？</h3>
+                    <div class="quiz-options">
+                      <label><input type="radio" name="q1" value="2"> 2次</label>
+                      <label><input type="radio" name="q1" value="3"> 3次</label>
+                      <label><input type="radio" name="q1" value="4"> 4次</label>
+                      <label><input type="radio" name="q1" value="5"> 5次</label>
+                    </div>
+                  </div>
+                  
+                  <div class="quiz-question">
+                    <h3>问题2：现任中国女排主教练是谁？</h3>
+                    <div class="quiz-options">
+                      <label><input type="radio" name="q2" value="郎平"> 郎平</label>
+                      <label><input type="radio" name="q2" value="蔡斌"> 蔡斌</label>
+                      <label><input type="radio" name="q2" value="陈忠和"> 陈忠和</label>
+                      <label><input type="radio" name="q2" value="袁伟民"> 袁伟民</label>
+                    </div>
+                  </div>
+                  
+                  <div class="quiz-question">
+                    <h3>问题3：以下哪位球员不是主攻手？</h3>
+                    <div class="quiz-options">
+                      <label><input type="radio" name="q3" value="朱婷"> 朱婷</label>
+                      <label><input type="radio" name="q3" value="张常宁"> 张常宁</label>
+                      <label><input type="radio" name="q3" value="袁心玥"> 袁心玥</label>
+                      <label><input type="radio" name="q3" value="李盈莹"> 李盈莹</label>
+                    </div>
+                  </div>
+                  
+                  <button class="quiz-submit">提交答案</button>
+                </div>
+              </section>
+              
+              <!-- 添加搜索部分 -->
+              <section>
+                <h2>搜索女排资讯</h2>
+                <form>
+                  <input type="text" placeholder="输入关键词搜索...">
+                  <input type="submit" value="搜索">
+                </form>
+              </section>
+              
+              <!-- 添加订阅部分 -->
+              <section class="subscribe-section">
+                <h2>订阅最新女排资讯</h2>
+                <p>输入您的邮箱，获取中国女排最新动态和赛事信息</p>
+                <div class="subscribe-form">
+                  <input type="email" placeholder="请输入您的邮箱地址">
+                  <button>订阅</button>
+                </div>
+              </section>
+            </div>
+            
+            <!-- 添加页脚 -->
+            <footer>
+              <div class="footer-columns">
+                <div class="footer-column">
+                  <h3>关于我们</h3>
+                  <ul>
+                    <li><a href="#">网站介绍</a></li>
+                    <li><a href="#">团队成员</a></li>
+                    <li><a href="#">联系方式</a></li>
+                    <li><a href="#">加入我们</a></li>
+                  </ul>
+                </div>
+                <div class="footer-column">
+                  <h3>赛事中心</h3>
+                  <ul>
+                    <li><a href="#">奥运会</a></li>
+                    <li><a href="#">世锦赛</a></li>
+                    <li><a href="#">世界杯</a></li>
+                    <li><a href="#">世界女排联赛</a></li>
+                  </ul>
+                </div>
+                <div class="footer-column">
+                  <h3>球员专区</h3>
+                  <ul>
+                    <li><a href="#">球员档案</a></li>
+                    <li><a href="#">技术统计</a></li>
+                    <li><a href="#">球员访谈</a></li>
+                    <li><a href="#">球员动态</a></li>
+                  </ul>
+                </div>
+                <div class="footer-column">
+                  <h3>资源下载</h3>
+                  <ul>
+                    <li><a href="#">比赛视频</a></li>
+                    <li><a href="#">精彩图集</a></li>
+                    <li><a href="#">技术分析</a></li>
+                    <li><a href="#">战术解读</a></li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="social-links">
+                <a href="#">微博</a>
+                <a href="#">微信</a>
+                <a href="#">抖音</a>
+                <a href="#">B站</a>
+              </div>
+              
+              <p>© 2024 中国女排粉丝网站 版权所有</p>
+              <p>陈平安 P231014830</p>
+            </footer>
+          </body>
+        </html>

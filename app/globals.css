@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+}
+
+@keyframes backgroundFade {
+  0%, 16% {
+    opacity: 1;
+  }
+  20%, 96% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.bg-image:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+}
+
+.bg-image:nth-child(1) {
+  background-image: url('/background/v2-5cc36d30a21d62aca5b8d54f03064842_r.jpg');
+  animation: backgroundFade 30s infinite 0s;
+}
+
+.bg-image:nth-child(2) {
+  background-image: url('/background/v2-a152f2578468a0484802789a2b1fde12_1440w.jpg');
+  animation: backgroundFade 30s infinite 6s;
+}
+
+.bg-image:nth-child(3) {
+  background-image: url('/background/v2-532f738c6629bb0988e79dfa664cb84a_1440w.jpg');
+  animation: backgroundFade 30s infinite 12s;
+}
+
+.bg-image:nth-child(4) {
+  background-image: url('/background/v2-5de4fa3a9b60302d4cc34fdf1fd057de_r.jpg');
+  animation: backgroundFade 30s infinite 18s;
+}
+
+.bg-image:nth-child(5) {
+  background-image: url('/background/v2-0c9c1897093c0b782dff27746677fe9c_r.jpg');
+  animation: backgroundFade 30s infinite 24s;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: #000; /* Fallback color */
+  font-family: 'KaiTi', 'STKaiti', 'Serif';
+}
